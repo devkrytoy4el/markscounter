@@ -26,7 +26,7 @@ def get_text_messages(message):
                 marks[i] = int(marks[i])
             ans = ('Средний балл равен - ' + str(round((sum(marks) / len(marks)),4)))
             bot.send_message(message.from_user.id, ans )
-            print ('[done] -',str(ans))
+            print ('[done] -',str(ans), message.from_user.first_name)
         except:
             bot.send_message(message.from_user.id, 'Попробуйте ещё раз' )
 bot.polling()
