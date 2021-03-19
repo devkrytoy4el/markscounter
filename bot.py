@@ -1,5 +1,7 @@
 import telebot
 import os
+from PIL import Image, ImageDraw, ImageFont
+import random
 
 token = os.environ.get('BOT_TOKEN')
 bot = telebot.TeleBot(token);
