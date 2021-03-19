@@ -1,4 +1,4 @@
 telebot
 random
 pillow
-pyTelegramBotAPI==3.6.6
+pyTelegramBotAPI
