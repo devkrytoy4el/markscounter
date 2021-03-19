@@ -13,7 +13,7 @@ def get_text_messages(message):
     elif message.text == "/start":
         bot.send_message(message.from_user.id, "Просто введи свои оценки")
     else :
-        marks = message.text.replace(" ","").replace(",","").replace(".","").split(' ')
+        marks = message.text.replace(" ","").replace(",","").replace(".","").split('')
        
         try:
             for i in range(len(marks)):
